@@ -5,6 +5,7 @@ import {ToastContainer, toast} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import {server}from"./server"
+import HomePage from './pages/HomePage';
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
     <BrowserRouter>
     <Routes>
       <Route path="/Login" element ={<LoginPage/>}/>
+      <Route path='/Home'  element={<HomePage/>}/>
       <Route path="/Signup" element={<SignupPage/>}/>
       <Route path="/activation/:activation_token" element=
       {<ActivationPage/>}/>
