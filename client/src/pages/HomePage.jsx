@@ -3,6 +3,8 @@ import Header from '../components/Layout/Header'
 import Hero from '../components/Route/Hero'
 import Categories from '../components/Route/Categories'
 import BestDeals from '../components/Route/BestDeals'
+import FeaturedProduct from '../components/Route/FeaturedProducts/FeaturedProduct'
+import Events from '../components/Events/Events'
 
 const HomePage = () => {
   return (
@@ -11,6 +13,9 @@ const HomePage = () => {
         <Hero/>
         <Categories/>
         <BestDeals/>
+        <Events/>
+        <FeaturedProduct/>
+        
     </div>
   )
 }
